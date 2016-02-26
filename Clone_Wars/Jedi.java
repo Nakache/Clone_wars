@@ -23,4 +23,8 @@ public class Jedi extends Personages {
     public void armedAttack(){
 
     }
+
+    public void lvlUp() {
+
+    }
 }

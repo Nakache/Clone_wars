@@ -23,4 +23,8 @@ public class BountyHunter extends Personages {
     public void armedAttack(){
 
     }
+
+    public void lvlUp() {
+
+    }
 }

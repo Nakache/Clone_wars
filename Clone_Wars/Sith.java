@@ -23,4 +23,8 @@ public class Sith extends Personages {
     public void armedAttack(){
 
     }
+
+    public void lvlUp() {
+
+    }
 }
