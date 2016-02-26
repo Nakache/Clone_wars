@@ -23,4 +23,8 @@ public class Mercenary extends Personages {
     public void armedAttack(){
 
     }
+
+    public void lvlUp() {
+
+    }
 }

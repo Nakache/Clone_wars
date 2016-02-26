@@ -23,4 +23,8 @@ public class ImperialAgent extends Personages {
     public void armedAttack(){
 
     }
+
+    public void lvlUp() {
+
+    }
 }

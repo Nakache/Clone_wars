@@ -23,4 +23,8 @@ public class Jawa extends Personages {
     public void armedAttack(){
 
     }
+
+    public void lvlUp() {
+
+    }
 }
