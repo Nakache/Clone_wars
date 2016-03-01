@@ -12,7 +12,6 @@ public abstract class Personages {
     public int xp;
 
     abstract public void physicalAttack();
-    abstract public void forceAttack();
     abstract public void armedAttack();
     abstract public void lvlUp();
 

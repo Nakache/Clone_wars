@@ -16,9 +16,6 @@ public class BountyHunter extends Personages {
 
     }
 
-    public void forceAttack(){
-
-    }
 
     public void armedAttack(){
 

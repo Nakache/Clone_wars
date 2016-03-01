@@ -16,9 +16,6 @@ public class ImperialAgent extends Personages {
 
     }
 
-    public void forceAttack(){
-
-    }
 
     public void armedAttack(){
 
