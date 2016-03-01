@@ -1,7 +1,7 @@
 /**
- * Created by Zouclar on 26/02/2016.
+ * Created by Florian on 01/03/2016.
  */
-public class BountyHunter extends Personages {
+public class BountyHunter extends Personnages {
 
     public BountyHunter() {
         hp = 100;

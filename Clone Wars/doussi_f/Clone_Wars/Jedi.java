@@ -1,7 +1,7 @@
 /**
- * Created by Zouclar on 26/02/2016.
+ * Created by Florian on 01/03/2016.
  */
-public class Jedi extends Personages {
+public class Jedi extends Personnages {
 
     public Jedi() {
         hp = 100;

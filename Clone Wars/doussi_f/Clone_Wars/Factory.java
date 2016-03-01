@@ -2,7 +2,7 @@
  * Created by Zouclar on 01/03/2016.
  */
 public class Factory {
-    Personages perso = new Personages() {
+    Personnages perso = new Personnages() {
         @Override
         public void physicalAttack() {
 

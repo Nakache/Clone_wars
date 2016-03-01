@@ -1,7 +1,7 @@
 /**
- * Created by Zouclar on 26/02/2016.
+ * Created by Florian on 01/03/2016.
  */
-public class Sith extends Personages {
+public class Sith extends Personnages {
 
     public Sith() {
         hp = 100;
