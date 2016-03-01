@@ -18,5 +18,4 @@ public class main {
         System.out.println("Veuillez Choisir un nom:");
         String name = scan.nextLine();
         System.out.println("Votre personnage s'apelle: " + name +" Il est de classe: " + classe);
-    }
 }
