@@ -1,7 +1,7 @@
 /**
  * Created by Zouclar on 01/03/2016.
  */
-public class Clone extends Personages {
+public class Clone extends Personnages {
 
     @Override
     public void physicalAttack() {

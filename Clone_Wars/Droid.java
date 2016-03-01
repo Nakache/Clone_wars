@@ -1,7 +1,7 @@
 /**
  * Created by Zouclar on 01/03/2016.
  */
-public class Droid extends Personages {
+public class Droid extends Personnages {
 
     public Droid() {
         hp = 50;

@@ -1,7 +1,7 @@
 /**
  * Created by Zouclar on 01/03/2016.
  */
-public class Soldat extends Personages {
+public class Soldat extends Personnages {
 
     public Soldat() {
         hp = 100;
