@@ -16,9 +16,6 @@ public class Jawa extends Personages {
 
     }
 
-    public void forceAttack(){
-
-    }
 
     public void armedAttack(){
 

@@ -16,9 +16,6 @@ public class Sith extends Personages {
 
     }
 
-    public void forceAttack(){
-
-    }
 
     public void armedAttack(){
 

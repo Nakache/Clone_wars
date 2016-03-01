@@ -16,9 +16,6 @@ public class Jedi extends Personages {
 
     }
 
-    public void forceAttack(){
-
-    }
 
     public void armedAttack(){
 

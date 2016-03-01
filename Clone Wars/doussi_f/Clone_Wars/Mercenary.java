@@ -16,9 +16,6 @@ public class Mercenary extends Personages {
 
     }
 
-    public void forceAttack(){
-
-    }
 
     public void armedAttack(){
 
