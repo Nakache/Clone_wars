@@ -70,9 +70,9 @@ public abstract class Personnages {
     private int lvl;
     private int xp;
 
-    abstract public void physicalAttack();
-    abstract public void armedAttack();
-    abstract public void lvlUp();
+    abstract public void physicalAttack(Personnages personnages);
+    abstract public void armedAttack(Personnages ennemy);
+    abstract public void lvlUp(Personnages personnages);
 
     public Personnages(){
         lvl = 1;

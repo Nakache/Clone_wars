@@ -12,16 +12,16 @@ public class Jedi extends Personnages {
         setXp(1);
     }
 
-    public void physicalAttack(){
+    public void physicalAttack(Personnages ennemy){
 
     }
 
 
-    public void armedAttack(){
+    public void armedAttack(Personnages ennemy){
 
     }
 
-    public void lvlUp() {
+    public void lvlUp(Personnages ennemy) {
 
     }
 }

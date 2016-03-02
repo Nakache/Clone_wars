@@ -37,6 +37,7 @@ public class main {
 
         Factory.generation();
         list = Factory.getList();
-        list.get(0);
+        System.out.println(list.get(0).getClass().getName());
+        perso.physicalAttack(list.get(0));
     }
 }

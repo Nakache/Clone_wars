@@ -11,15 +11,15 @@ public class Soldat extends Personnages {
         setIntelligence(125);
     }
 
-    public void physicalAttack(){
+    public void physicalAttack(Personnages personnages){
 
     }
 
-    public void armedAttack(){
+    public void armedAttack(Personnages personnages){
 
     }
 
-    public void lvlUp() {
+    public void lvlUp(Personnages personnages) {
 
     }
 }
