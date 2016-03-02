@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.Scanner;
 
@@ -6,6 +7,8 @@ import java.util.Scanner;
  */
 public class main {
     public static void main(String[] args) {
+        Factory Factory = new Factory();
+        ArrayList<Personnages> list;
         Personnages perso = null;
         System.out.println("Veuillez Choisir une classe parmis:");
         System.out.println("1. Jedi");
@@ -32,6 +35,8 @@ public class main {
 
         System.out.println("Votre personnage s'appelle: " + name + " Il est de classe: " + perso.getClass().getName());
 
-        //perso.physicalAttack();
+        Factory.generation();
+        list = Factory.getList();
+        list.get(0);
     }
 }

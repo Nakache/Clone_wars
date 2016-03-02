@@ -15,7 +15,6 @@ public class Soldat extends Personnages {
 
     }
 
-
     public void armedAttack(){
 
     }
