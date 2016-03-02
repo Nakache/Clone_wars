@@ -11,17 +11,4 @@ public class ImperialAgent extends Personnages {
         setIntelligence(100);
         setXp(1);
     }
-
-    public void physicalAttack(Personnages ennemy){
-
-    }
-
-
-    public void armedAttack(Personnages ennemy){
-
-    }
-
-    public void lvlUp(Personnages ennemy) {
-
-    }
 }

@@ -70,9 +70,14 @@ public abstract class Personnages {
     private int lvl;
     private int xp;
 
-    abstract public void physicalAttack(Personnages personnages);
-    abstract public void armedAttack(Personnages ennemy);
-    abstract public void lvlUp(Personnages personnages);
+    public void physicalAttack(Enemy ennemy) {
+        if ((power - ennemy.getDef()) > 0)
+            ennemy.setHp(ennemy.getHp() - (power - ennemy.getDef()));
+        else
+            System.out.println("No damage done : power: " + power + "def: " + ennemy.getDef());
+    }
+    public void armedAttack(Enemy ennemy) {}
+    public void lvlUp(Personnages personnages) {}
 
     public Personnages(){
         lvl = 1;

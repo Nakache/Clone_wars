@@ -11,17 +11,4 @@ public class Sith extends Personnages {
         setIntelligence(200);
         setXp(1);
     }
-
-    public void physicalAttack(Personnages ennemy){
-
-    }
-
-
-    public void armedAttack(Personnages ennemy){
-
-    }
-
-    public void lvlUp(Personnages ennemy) {
-
-    }
 }

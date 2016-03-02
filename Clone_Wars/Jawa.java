@@ -11,16 +11,4 @@ public class Jawa extends Personnages {
         setIntelligence(400);
         setXp(1);
     }
-    public void physicalAttack(Personnages ennemy){
-
-    }
-
-
-    public void armedAttack(Personnages ennemy){
-
-    }
-
-    public void lvlUp(Personnages ennemy) {
-
-    }
 }
