@@ -4,12 +4,11 @@
 public class Droid extends Personnages {
 
     public Droid() {
-        hp = 50;
-        def = 100;
-        power = 25;
-        force = 0;
-        intelligence = 200;
-        xp= 1 ;
+        setHp(50);
+        setDef(100);
+        setPower(25);
+        setForce(0);
+        setIntelligence(200);
     }
 
     public void physicalAttack(){

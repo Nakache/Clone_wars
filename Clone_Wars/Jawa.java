@@ -4,14 +4,13 @@
 public class Jawa extends Personnages {
 
     public Jawa() {
-        hp = 400;
-        def = 400;
-        power = 400;
-        force = 0;
-        intelligence = 400;
-        xp= 1 ;
+        setHp(400);
+        setDef(400);
+        setPower(400);
+        setForce(0);
+        setIntelligence(400);
+        setXp(1);
     }
-
     public void physicalAttack(){
 
     }

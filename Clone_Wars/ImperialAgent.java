@@ -4,12 +4,12 @@
 public class ImperialAgent extends Personnages {
 
     public ImperialAgent() {
-        hp = 350;
-        def = 100;
-        power = 100;
-        force = 0;
-        intelligence = 100;
-        xp= 1 ;
+        setHp(350);
+        setDef(100);
+        setPower(100);
+        setForce(0);
+        setIntelligence(100);
+        setXp(1);
     }
 
     public void physicalAttack(){
