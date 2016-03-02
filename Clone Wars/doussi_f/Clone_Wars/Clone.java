@@ -4,17 +4,17 @@
 public class Clone extends Personnages {
 
     @Override
-    public void physicalAttack() {
+    public void physicalAttack(Personnages personnages) {
 
     }
 
     @Override
-    public void armedAttack() {
+    public void armedAttack(Personnages personnages) {
 
     }
 
     @Override
-    public void lvlUp() {
+    public void lvlUp(Personnages personnages) {
 
     }
 

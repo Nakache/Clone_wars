@@ -11,16 +11,16 @@ public class Droid extends Personnages {
         setIntelligence(200);
     }
 
-    public void physicalAttack(){
+    public void physicalAttack(Personnages personnages){
 
     }
 
 
-    public void armedAttack(){
+    public void armedAttack(Personnages personnages){
 
     }
 
-    public void lvlUp() {
+    public void lvlUp(Personnages personnages) {
 
     }
 }
