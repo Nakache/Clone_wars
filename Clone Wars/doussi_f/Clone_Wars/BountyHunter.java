@@ -11,17 +11,4 @@ public class BountyHunter extends Personnages {
         setIntelligence(350);
         setXp(1);
     }
-
-    public void physicalAttack(Personnages ennemy){
-
-    }
-
-
-    public void armedAttack(Personnages ennemy){
-
-    }
-
-    public void lvlUp(Personnages ennemy) {
-
-    }
 }

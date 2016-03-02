@@ -4,12 +4,12 @@ import java.util.ArrayList;
  * Created by Zouclar on 01/03/2016.
  */
 public class Factory {
-    private ArrayList<Personnages> list;
+    private ArrayList<Enemy> list;
 
     public void generation() {
         int nbEnemy = (int) (Math.random() * 12 + 1);
 
-        list = new ArrayList<Personnages>();
+        list = new ArrayList<Enemy>();
 
         for (int i = 0; i <= nbEnemy; i++) {
             int rand = (int) (Math.random() * 100 + 1);
@@ -21,11 +21,11 @@ public class Factory {
                 list.add(new Droid());
         }
     }
-    public ArrayList<Personnages> getList() {
+    public ArrayList<Enemy> getList() {
         return list;
     }
 
-    public void setList(ArrayList<Personnages> list) {
+    public void setList(ArrayList<Enemy> list) {
         this.list = list;
     }
 

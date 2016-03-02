@@ -1,7 +1,7 @@
 /**
  * Created by Zouclar on 01/03/2016.
  */
-public class Soldat extends Personnages {
+public class Soldat extends Enemy {
 
     public Soldat() {
         setHp(100);
@@ -12,14 +12,6 @@ public class Soldat extends Personnages {
     }
 
     public void physicalAttack(Personnages personnages){
-
-    }
-
-    public void armedAttack(Personnages personnages){
-
-    }
-
-    public void lvlUp(Personnages personnages) {
 
     }
 }

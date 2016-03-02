@@ -1,7 +1,7 @@
 /**
  * Created by Zouclar on 01/03/2016.
  */
-public class Droid extends Personnages {
+public class Droid extends Enemy {
 
     public Droid() {
         setHp(50);
@@ -12,15 +12,6 @@ public class Droid extends Personnages {
     }
 
     public void physicalAttack(Personnages personnages){
-
-    }
-
-
-    public void armedAttack(Personnages personnages){
-
-    }
-
-    public void lvlUp(Personnages personnages) {
 
     }
 }

@@ -1,20 +1,10 @@
 /**
  * Created by Zouclar on 01/03/2016.
  */
-public class Clone extends Personnages {
+public class Clone extends Enemy {
 
     @Override
     public void physicalAttack(Personnages personnages) {
-
-    }
-
-    @Override
-    public void armedAttack(Personnages personnages) {
-
-    }
-
-    @Override
-    public void lvlUp(Personnages personnages) {
 
     }
 

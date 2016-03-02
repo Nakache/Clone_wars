@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class main {
     public static void main(String[] args) {
         Factory Factory = new Factory();
-        ArrayList<Personnages> list;
+        ArrayList<Enemy> list;
         Personnages perso = null;
         System.out.println("Veuillez Choisir une classe parmis:");
         System.out.println("1. Jedi");
@@ -31,13 +31,14 @@ public class main {
         tbl.put(5, new Mercenary());
         tbl.put(6, new Jawa());
 
-        perso = tbl.get(1);
+        perso = tbl.get(Integer.parseInt(classe));
 
         System.out.println("Votre personnage s'appelle: " + name + " Il est de classe: " + perso.getClass().getName());
-
         Factory.generation();
         list = Factory.getList();
         System.out.println(list.get(0).getClass().getName());
         perso.physicalAttack(list.get(0));
+        System.out.println(perso.getHp());
+        System.out.println(list.get(0).getHp());
     }
 }
