@@ -1,3 +1,4 @@
+import java.util.Hashtable;
 import java.util.Scanner;
 
 /**
@@ -5,6 +6,7 @@ import java.util.Scanner;
  */
 public class main {
     public static void main(String[] args) {
+        Personnages perso = null;
         System.out.println("Veuillez Choisir une classe parmis:");
         System.out.println("1. Jedi");
         System.out.println("2. Sith"); //BountyHunter, ImperialAgent, Mercenary, Jawa
@@ -17,6 +19,19 @@ public class main {
         String classe = scan.nextLine();
         System.out.println("Veuillez Choisir un nom:");
         String name = scan.nextLine();
-        System.out.println("Votre personnage s'appelle: " + name + " Il est de classe: " + classe);
+
+        Hashtable<Integer,Personnages> tbl = new Hashtable<Integer,Personnages>();
+        tbl.put(1, new Jedi());
+        tbl.put(2, new Sith());
+        tbl.put(3, new BountyHunter());
+        tbl.put(4, new ImperialAgent());
+        tbl.put(5, new Mercenary());
+        tbl.put(6, new Jawa());
+
+        perso = tbl.get(1);
+
+        System.out.println("Votre personnage s'appelle: " + name + " Il est de classe: " + perso.getClass().getName());
+
+        //perso.physicalAttack();
     }
 }

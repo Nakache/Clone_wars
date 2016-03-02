@@ -20,11 +20,11 @@ public class Room {
         this.ennemisList = ennemisList;
     }
 
-    public void getLvl(int lvl) {
+    public void getLvl() {
         this.lvl = lvl;
     }
 
-    public void getEnnemisList(int ennemisList) {
+    public void getEnnemisList() {
         this.ennemisList = ennemisList;
     }
 }

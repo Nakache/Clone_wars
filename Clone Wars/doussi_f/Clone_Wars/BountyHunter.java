@@ -4,12 +4,12 @@
 public class BountyHunter extends Personnages {
 
     public BountyHunter() {
-        hp = 100;
-        def = 100;
-        power = 100;
-        force = 0;
-        intelligence = 350;
-        xp= 1 ;
+        setHp(100);
+        setDef(100);
+        setPower(100);
+        setForce(0);
+        setIntelligence(350);
+        setXp(1);
     }
 
     public void physicalAttack(){

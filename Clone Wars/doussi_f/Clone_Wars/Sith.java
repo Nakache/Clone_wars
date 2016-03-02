@@ -4,12 +4,12 @@
 public class Sith extends Personnages {
 
     public Sith() {
-        hp = 100;
-        def = 100;
-        power = 200;
-        force = 200;
-        intelligence = 200;
-        xp= 1 ;
+        setHp(100);
+        setDef(100);
+        setPower(200);
+        setForce(200);
+        setIntelligence(200);
+        setXp(1);
     }
 
     public void physicalAttack(){

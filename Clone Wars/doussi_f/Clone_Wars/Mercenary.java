@@ -4,12 +4,12 @@
 public class Mercenary extends Personnages {
 
     public Mercenary() {
-        hp = 100;
-        def = 350;
-        power = 100;
-        force = 0;
-        intelligence = 100;
-        xp= 1 ;
+        setHp(100);
+        setDef(350);
+        setPower(100);
+        setForce(0);
+        setIntelligence(100);
+        setXp(1);
     }
 
     public void physicalAttack(){

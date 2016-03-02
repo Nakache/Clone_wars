@@ -19,12 +19,11 @@ public class Clone extends Personnages {
     }
 
     public Clone(){
-        hp = 100;
-        def = 100;
-        power = 100;
-        force = 0;
-        intelligence = 100;
-        xp= 1 ;
+        setHp(100);
+        setDef(100);
+        setPower(100);
+        setForce(0);
+        setIntelligence(100);
     }
 
 }

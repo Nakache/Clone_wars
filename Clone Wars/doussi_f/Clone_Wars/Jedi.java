@@ -4,12 +4,12 @@
 public class Jedi extends Personnages {
 
     public Jedi() {
-        hp = 100;
-        def = 200;
-        power = 100;
-        force = 200;
-        intelligence = 200;
-        xp= 1 ;
+        setHp(100);
+        setDef(200);
+        setPower(100);
+        setForce(200);
+        setIntelligence(200);
+        setXp(1);
     }
 
     public void physicalAttack(){
