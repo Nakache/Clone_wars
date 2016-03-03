@@ -40,5 +40,10 @@ public class main {
         perso.physicalAttack(list.get(0));
         System.out.println(perso.getHp());
         System.out.println(list.get(0).getHp());
+        if (list.get(0).getHp() <= 0) {
+            System.out.println(list.get(0).getClass().getName() + " est mort !");
+        }
+        else
+            System.out.println("Il reste " + list.get(0).getHp() + " HP à l'ennemi");
     }
 }
