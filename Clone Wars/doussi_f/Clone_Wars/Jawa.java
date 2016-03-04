@@ -10,5 +10,7 @@ public class Jawa extends Personnages {
         setForce(0);
         setIntelligence(400);
         setXp(1);
+        setType(Jawa.class.getCanonicalName());
+
     }
 }

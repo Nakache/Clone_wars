@@ -10,5 +10,6 @@ public class Sith extends Personnages {
         setForce(200);
         setIntelligence(200);
         setXp(1);
+        setType(Sith.class.getCanonicalName());
     }
 }

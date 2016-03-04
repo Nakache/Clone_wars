@@ -9,7 +9,7 @@ public class main {
     public static void main(String[] args) {
         Factory Factory = new Factory();
         ArrayList<Enemy> list;
-        Personnages perso = null;
+        //int perso = Integer.parseInt(null);
         System.out.println("Veuillez Choisir une classe parmis:");
         System.out.println("1. Jedi");
         System.out.println("2. Sith"); //BountyHunter, ImperialAgent, Mercenary, Jawa
@@ -22,28 +22,66 @@ public class main {
         String classe = scan.nextLine();
         System.out.println("Veuillez Choisir un nom:");
         String name = scan.nextLine();
+        Personnages selectedPerso;
 
-        Hashtable<Integer,Personnages> tbl = new Hashtable<Integer,Personnages>();
-        tbl.put(1, new Jedi());
-        tbl.put(2, new Sith());
-        tbl.put(3, new BountyHunter());
-        tbl.put(4, new ImperialAgent());
-        tbl.put(5, new Mercenary());
-        tbl.put(6, new Jawa());
+        switch (classe){
+            case "1":
+                selectedPerso = new Jedi();
+                break;
+            case "2":
+                selectedPerso = new Sith();
+                break;
+            case "3":
+                selectedPerso = new BountyHunter();
+                break;
+            case "4":
+                selectedPerso = new ImperialAgent();
+                break;
+            case "5":
+                selectedPerso = new Mercenary();
+                break;
+            case "6":
+                selectedPerso = new Jawa();
+                break;
+            default:
+                selectedPerso = new Jedi();
+                break;
+        }
 
-        perso = tbl.get(Integer.parseInt(classe));
 
-        System.out.println("Votre personnage s'appelle: " + name + " Il est de classe: " + perso.getClass().getName());
+        System.out.println("Votre personnage s'appelle: " + name + " Il est de classe: " + selectedPerso.getType());
+
+        while (selectedPerso.isAlive()){
+
         Factory.generation();
         list = Factory.getList();
-        System.out.println(list.get(0).getClass().getName());
-        perso.physicalAttack(list.get(0));
-        System.out.println(perso.getHp());
-        System.out.println(list.get(0).getHp());
+        System.out.println("Un " + list.get(0).getClass().getName() + " apparaît !");
+        System.out.println("Que souhaitez-vous faire ?");
+
+        System.out.println("1. Physical attack");
+        System.out.println("2. Special attack");
+        System.out.println("3. Armed attack");
+        String attack = scan.nextLine();
+        System.out.println("votre personnage tape du "+ selectedPerso.getPower());
+
+        if (selectedPerso.getType().equals("Jedi") || selectedPerso.getType().equals("Sith")){
+            switch (attack){
+                case "1": selectedPerso.physicalAttack(list.get(0));
+                    break;
+                case "2": selectedPerso.forceAttack(list.get(0));
+                    break;
+                case "3": selectedPerso.armedAttack(list.get(0));
+                    break;
+                default:break;
+            }
+        }
+
+
         if (list.get(0).getHp() <= 0) {
             System.out.println(list.get(0).getClass().getName() + " est mort !");
         }
         else
             System.out.println("Il reste " + list.get(0).getHp() + " HP à l'ennemi");
+        }
     }
 }

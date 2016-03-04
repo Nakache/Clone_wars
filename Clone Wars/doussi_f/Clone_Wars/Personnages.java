@@ -61,6 +61,13 @@ public abstract class Personnages {
         return xp;
     }
 
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
 
     private int hp;
     private int def;
@@ -69,17 +76,45 @@ public abstract class Personnages {
     private int intelligence;
     private int lvl;
     private int xp;
+    private String type;
 
-    public void physicalAttack(Enemy ennemy) {
-        if ((power - ennemy.getDef()) > 0)
+    public int physicalAttack(Enemy ennemy) {
+        if ((power - ennemy.getDef()) > 0) {
+            System.out.println("Vous faite une attaque physique !");
             ennemy.setHp(ennemy.getHp() - (power - ennemy.getDef()));
+            System.out.println("L'ennemi a perdu " + (power - ennemy.getDef()) + "/"+ ennemy.getDef() +" HP");
+        }
+
         else
-            System.out.println("No damage done : power: " + power + "def: " + ennemy.getDef());
+            System.out.println("Vous ne faite aucun dégât, vous tapez " + power + " alors que l'ennemi à " + ennemy.getDef() +" de défence");
+        System.out.println("");
+        return (0);
     }
-    public void armedAttack(Enemy ennemy) {}
-    public void lvlUp(Personnages personnages) {}
+
+    public int forceAttack(Enemy ennemy) {
+        System.out.println("Votre peronnage fait une attaque force au " + ennemy.getClass().getName());
+        ennemy.setHp(ennemy.getHp() - (force/2)*2);
+        System.out.println("L'ennemi a perdu " + (power - ennemy.getDef()) + "/"+ ennemy.getDef() +" HP");
+        return (0);
+    }
+
+    public int armedAttack(Enemy ennemy) {
+        System.out.println("Vous faite une attaque avec une arme !");
+        ennemy.setHp(ennemy.getHp() - (intelligence - ennemy.getDef()));
+        System.out.println("L'ennemi a perdu " + (power - ennemy.getDef()) + "/"+ ennemy.getDef() +" HP");
+        return (0);
+    }
+    public void lvlUp(Personnages personnages) {
+        if (getXp() > ){
+
+        }
+    }
 
     public Personnages(){
         lvl = 1;
+    }
+
+    public boolean isAlive() {
+        return (getHp() > 0);
     }
 }

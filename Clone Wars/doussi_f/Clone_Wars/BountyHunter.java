@@ -10,5 +10,7 @@ public class BountyHunter extends Personnages {
         setForce(0);
         setIntelligence(350);
         setXp(1);
+        setType(BountyHunter.class.getCanonicalName());
+
     }
 }
