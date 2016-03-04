@@ -52,6 +52,7 @@ public class main {
         System.out.println("Votre personnage s'appelle: " + name + " Il est de classe: " + selectedPerso.getType());
 
         while (selectedPerso.isAlive()){
+            System.out.println("\nÀ vous de jouer !\n");
             Factory.generation();
             list = Factory.getList();
             System.out.println("Un " + list.get(0).getClass().getName() + " apparaît !");
@@ -62,7 +63,7 @@ public class main {
             System.out.println("3. Armed attack");
             System.out.println("4. Show stats");
             String attack = scan.nextLine();
-            System.out.println("votre personnage tape du "+ selectedPerso.getPower());
+            //System.out.println("votre personnage tape du "+ selectedPerso.getPower());
 
             if (selectedPerso.getType().equals("Jedi") || selectedPerso.getType().equals("Sith")){
                 switch (attack){
