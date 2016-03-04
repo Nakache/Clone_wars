@@ -10,5 +10,6 @@ public class Jedi extends Personnages {
         setForce(200);
         setIntelligence(200);
         setXp(1);
+        setType(Jedi.class.getCanonicalName());
     }
 }

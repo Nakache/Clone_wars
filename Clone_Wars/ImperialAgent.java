@@ -10,5 +10,7 @@ public class ImperialAgent extends Personnages {
         setForce(0);
         setIntelligence(100);
         setXp(1);
+        setType(ImperialAgent.class.getCanonicalName());
+
     }
 }
