@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Factory {
     private ArrayList<Enemy> list;
 
-    public void generation() {
+    public void generation(int lvl) {
         int nbEnemy = (int) (Math.random() * 12 + 1);
 
         list = new ArrayList<Enemy>();
@@ -14,11 +14,11 @@ public class Factory {
         for (int i = 0; i <= nbEnemy; i++) {
             int rand = (int) (Math.random() * 100 + 1);
             if (rand >= 30)
-            list.add(new Clone());
+            list.add(new Clone(lvl));
             else if (rand >= 10)
-                list.add(new Soldat());
+                list.add(new Soldat(lvl));
             else
-                list.add(new Droid());
+                list.add(new Droid(lvl));
         }
     }
     public ArrayList<Enemy> getList() {

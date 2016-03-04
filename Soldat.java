@@ -3,12 +3,12 @@
  */
 public class Soldat extends Enemy {
 
-    public Soldat() {
-        setHp(100);
-        setDef(150);
-        setPower(125);
+    public Soldat(int lvl) {
+        setHp(100 * lvl);
+        setDef(150 * lvl);
+        setPower(125 * lvl);
         setForce(0);
-        setIntelligence(125);
+        setIntelligence(125 * lvl);
     }
 
     public void physicalAttack(Personnages personnages){

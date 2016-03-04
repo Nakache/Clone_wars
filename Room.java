@@ -3,26 +3,26 @@
  */
 public class Room {
 
-    private int lvl;
-    private int ennemisList;
-
-    public Room(int lvl, int ennemisList) {
-
-        setLvl(lvl);
-        setEnnemisList(ennemisList);
+    public int getLvl() {
+        return lvl;
     }
 
     public void setLvl(int lvl) {
         this.lvl = lvl;
     }
 
+    private int lvl;
+    private int ennemisList;
+
+    public Room() {
+
+    }
+
+
     public void setEnnemisList(int ennemisList) {
         this.ennemisList = ennemisList;
     }
 
-    public void getLvl() {
-        this.lvl = lvl;
-    }
 
     public void getEnnemisList() {
         this.ennemisList = ennemisList;

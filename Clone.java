@@ -8,12 +8,12 @@ public class Clone extends Enemy {
 
     }
 
-    public Clone(){
-        setHp(100);
-        setDef(100);
-        setPower(100);
+    public Clone(int lvl){
+        setHp(100 * lvl);
+        setDef(100 * lvl);
+        setPower(100 * lvl);
         setForce(0);
-        setIntelligence(100);
+        setIntelligence(100 * lvl);
     }
 
 }
