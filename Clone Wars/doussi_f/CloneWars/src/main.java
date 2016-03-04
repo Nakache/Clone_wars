@@ -60,6 +60,7 @@ public class main {
             System.out.println("1. Physical attack");
             System.out.println("2. Special attack");
             System.out.println("3. Armed attack");
+            System.out.println("4. Show stats");
             String attack = scan.nextLine();
             System.out.println("votre personnage tape du "+ selectedPerso.getPower());
 
@@ -70,6 +71,13 @@ public class main {
                     case "2": selectedPerso.forceAttack(list.get(0));
                         break;
                     case "3": selectedPerso.armedAttack(list.get(0));
+                        break;
+                    case "4": System.out.println(selectedPerso.getHp() + " HP");
+                        System.out.println(selectedPerso.getDef() + " Défense");
+                        System.out.println(selectedPerso.getPower() + " Puissance");
+                        System.out.println(selectedPerso.getForce() + " Force");
+                        System.out.println(selectedPerso.getIntelligence() + " Intelligence();");
+                        System.out.println("Votre personnage est lvl : " + selectedPerso.getLvl());
                         break;
                     default:break;
                 }
