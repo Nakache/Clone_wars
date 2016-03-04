@@ -14,7 +14,7 @@ public class Factory {
         for (int i = 0; i <= nbEnemy; i++) {
             int rand = (int) (Math.random() * 100 + 1);
             if (rand >= 30)
-                list.add(new Clone());
+            list.add(new Clone());
             else if (rand >= 10)
                 list.add(new Soldat());
             else
@@ -31,4 +31,3 @@ public class Factory {
 
     public Factory() {}
 }
-

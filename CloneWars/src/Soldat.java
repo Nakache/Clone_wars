@@ -1,5 +1,5 @@
 /**
- * Created by Zouclar on 04/03/2016.
+ * Created by Zouclar on 01/03/2016.
  */
 public class Soldat extends Enemy {
 
